@@ -1,0 +1,96 @@
+@charset "UTF-08";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+}
+
+/* 
+font-family: 'Crimson Pro', serif;
+font-family: 'Lato', sans-serif;
+ */
+
+ body {
+    background-color: #D9CDF7;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #271A45;
+ }
+
+ #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 137px;
+ }
+
+ #imagem {
+    width: 449px;
+    height: 253px;
+
+    background: url('../assets/imagem/sofa.png') no-repeat center ;
+    background-size: cover;
+ }
+
+ #imagem button {
+    position: absolute;
+    right: 47%;
+
+    background: url('../assets/imagem/vector.png') no-repeat center;
+    background-size: contain;
+
+    border: none;
+    width: 33px;
+    height: 22px;
+    
+    cursor: pointer;
+ }
+
+ #imagem button:hover {
+    scale: 1.1;
+    transition: .6s;
+ }
+
+ #info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+ }
+
+ #info-text {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 12px;
+ }
+
+ #info-text h1 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 32px;
+ }
+
+ #add p {
+    font-weight: bold;
+    display: inline;
+    padding: 8px 16px;
+    border: 1px solid #271A45;
+    border-radius: 2rem;
+ }
+
+
+ @media (max-width: 700px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagem button {
+        right: 20%;
+    }
+ }
