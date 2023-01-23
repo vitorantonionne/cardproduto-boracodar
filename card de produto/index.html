@@ -12,11 +12,16 @@
 <body>
     <div id="container">
         <div id="imagem">
-            <!-- imagem -->
-            <button onclick="tospin()">
-                <!-- vector -->
+            <img src="assets/imagem/sofa.png" alt="imagem sofa">
+            <img id="sofa-animate" src="assets/imagem/sofa.gif.gif" alt="git imagem sofa rotacionando">
+            <button class="btn-on" onclick="Mode()">
+                <img src="assets/imagem/vector.png" alt="button ">
+            </button>
+            <button class="btn-close" onclick="Mode()">
+                <ion-icon name="close-outline"></ion-icon>
             </button>
         </div>
+
         <div id="info">
             <div id="info-text">
                 <small>CÓDIGO: 42404</small>
@@ -28,6 +33,10 @@
             </div>
         </div>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script src="main.js"></script>
 </body>
 </html>
